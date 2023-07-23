@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 export const footerItems = [
   {
     icon: "ic:outline-email",
-    href: "https://github.com/",
+    href: "mailto:alvinprtm22@gmail.com",
   },
   {
     icon: "iconoir:telegram",
@@ -32,7 +32,7 @@ const Footer = () => {
         <p className="text-center text-gray-300 text-sm">
           © 2023 My Company. All rights reserved.
         </p>
-        <div className="flex justify-start gap-4">
+        <a className="flex justify-start gap-4">
           {footerItems?.map((e, index) => {
             return (
               <Icon
@@ -45,9 +45,9 @@ const Footer = () => {
               />
             );
           })}
-        </div>
+        </a>
         <p className="text-center self-center text-white text-md">
-          SURFING NEVER ALONE{" "}
+          CODING NEVER ALONE{" "}
         </p>
       </div>
     </footer>

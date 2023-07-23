@@ -11,22 +11,16 @@ import Footer from "./components/Footer";
 import Design from "./Home/Design";
 import My3DModel from "./Home/My3DModel";
 import ContactForm from "./Contact/ContactForm";
+import TechStack from "./Home/TechStack";
 
 function App() {
   return (
     <>
       <Navbar />
-      {/* <Routes>
-        {routesData?.map((e) => {
-          return <Route path={e?.path} element={e?.element} />;
-        })}
-      </Routes> */}
       <Header />
-      {/* <Design /> */}
+      <TechStack />
       <MyWorks />
       <Contactcard />
-      {/* <My3DModel /> */}
-      {/* <ContactForm /> */}
       <Footer />
     </>
   );
