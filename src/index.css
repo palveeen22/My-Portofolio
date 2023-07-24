@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-    font-family: "Manrope", sans-serif;
-    font-family: 'Dosis', sans-serif;
+    font-family: "popins", sans-serif;
+    /* font-family: 'Dosis', sans-serif; */
   }
   
   .flag-icon {

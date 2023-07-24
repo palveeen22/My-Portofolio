@@ -28,11 +28,11 @@ export const footerItems = [
 const Footer = () => {
   return (
     <footer className="bg-[#000000] relative mt-auto p-10">
-      <div className="flex justify-between max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+      <div className="flex flex-col md:flex-row justify-between max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 gap-5">
         <p className="text-center text-gray-300 text-sm">
-          © 2023 My Company. All rights reserved.
+          © 2023 Alvin Macaronnie
         </p>
-        <a className="flex justify-start gap-4">
+        <a className="flex justify-center gap-4">
           {footerItems?.map((e, index) => {
             return (
               <Icon

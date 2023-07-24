@@ -23,7 +23,7 @@ export const workData = [
 const MyWorks = () => {
   return (
     <section className="paddingX paddingY bg-[#23281a]">
-      <div className="flex flex-col justify-start gap-8">
+      <div className="flex flex-col justify-start gap-10">
         <h3 className="text-[#ffffff] text-[4rem]">Projects</h3>
         <div className="flex flex-col lg:flex-row justify-start gap-8 w-full">
           {workData.map((e) => {
