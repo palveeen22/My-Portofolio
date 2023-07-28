@@ -1,30 +1,12 @@
 import React from "react";
-import img1 from "../assets/belinsky.png";
-import img2 from "../assets/turtang.png";
-
-export const workData = [
-  {
-    img: img1,
-    a: "UI DESIGN & WEB DEVELOPMENT",
-    p: "Given that Belinsky is a production house and creative studio,its areas of expertise include photography production and filmmaking.It is owned by a well- known YouTuber named Turah Parthayana under the umbrella of Mantappu Corp.",
-  },
-  {
-    img: img2,
-    a: "FULL-STACK WEB APPLICATION",
-    p: "  TurunTangan is a non-profit youth volunteer movement engaged in social humanity, environment, education, political education, and health with more than 70 chapters across Indonesia.",
-  },
-  // {
-  //   img: img2,
-  //   a: "FULL-STACK WEB APPLICATION",
-  //   p: "  TurunTangan is a non-profit youth volunteer movement engaged in social humanity, environment, education, political education, and health with more than 70 chapters across Indonesia.",
-  // },
-];
+import Modal from "./Modal";
+import { workData } from "../components/Constants";
 
 const MyWorks = () => {
   return (
-    <section className="paddingX paddingY bg-[#19191a]">
-      <div className="flex flex-col justify-start gap-10">
-        <h1 className="font-light md:text-[7rem] text-[3rem] text-[#ffffff]">
+    <section className="paddingX paddingY bg-[#202020]">
+      <div className="flex flex-col justify-start gap-6">
+        <h1 className="font-light md:text-[5rem] text-[2rem] text-center text-[#ffffff]">
           Projects
         </h1>
         <div className="flex flex-col lg:flex-row justify-start gap-8 w-full">
@@ -35,8 +17,8 @@ const MyWorks = () => {
                   src={e?.img}
                   className="bg-[#fbf6f1] rounded-xl border border-black"
                 />
-                <a className="font-extralight text-[#ffffff]">{e?.a} </a>
-                <p className="text-justify text-[#ffffff]">{e?.p}</p>
+                {/* <a className="font-extralight text-[#ffffff]">{e?.a} </a>
+                <p className="text-justify text-[#ffffff]">{e?.p}</p> */}
               </div>
             );
           })}

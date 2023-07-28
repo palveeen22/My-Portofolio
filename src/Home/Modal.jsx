@@ -1,17 +1,18 @@
 import React from "react";
+import { workData } from "../components/Constants";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 
 const Modal = () => {
   let [isOpen, setIsOpen] = useState(true);
 
-  function closeModal() {
+  const closeModal = () => {
     setIsOpen(false);
-  }
+  };
 
-  function openModal() {
+  const openModal = () => {
     setIsOpen(true);
-  }
+  };
 
   return (
     <>

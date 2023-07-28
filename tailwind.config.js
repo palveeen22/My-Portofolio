@@ -7,5 +7,5 @@ export default {
       sans: ["SofiaPro", "Helvetica", "Arial", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

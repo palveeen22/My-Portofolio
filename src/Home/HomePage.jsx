@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "@iconify/react";
 import img from "../assets/Alvin1.png";
 import img2 from "../assets/alvin2.jpg";
 
@@ -10,7 +11,7 @@ export const dataBar = [
 
 const HomePage = () => {
   return (
-    <section className="bg-[#19191a] paddingXShorter paddingYShorter">
+    <section className="bg-[#202020] paddingXShorter paddingYShorter">
       {/* dekstop version */}
       <div className="hidden md:block lg:block">
         <header className="flex flex-col md:flex-row lg:flex-row justify-start gap-5 paddingBottomShorter3">
@@ -29,7 +30,7 @@ const HomePage = () => {
             </p>
           </div>
           <div className="md:w-[30%] w-full">
-            <img src={img} className="rounded-lg" />
+            <img src={img} className="rounded-lg object-cover" />
           </div>
         </header>
 
@@ -46,7 +47,7 @@ const HomePage = () => {
         <header className="bg-[#28282a] flex flex-col justify-start gap-5 paddingBottomLonger rounded-lg ">
           <div className="flex flex-col md:w-[70%] w-full paddingX paddingYLonger gap-8">
             <h1
-              className="text-[#ffffff] font-light md:text-[5rem] text-[3rem] text-start tracking-wide
+              className="text-[#ffffff] font-light md:text-[5rem] text-[2.5rem] text-start tracking-wide
 "
             >
               Hello! <br /> I'm - Alvin <br />
@@ -60,9 +61,20 @@ const HomePage = () => {
           </div>
           <div className="relative mx-auto px-5">
             <img src={img2} className="rounded-3xl object-cover" />
-            <button className="absolute bottom-4 left-5 right-5 py-5 mx-auto px-8 bg-[#19191a] text-[#B9FF00] rounded-full">
+            {/* <button
+              class="absolute bottom-6 right-10  mt-8 lg:mt-0 btn text-sm hover:bg-[#19191a] normal-case font-normal rounded-full border-none bg-[#19191a] text-[#ffffff] w-40 group 
+ inline-flex items-center overflow-hidden"
+            >
               Connect with me!
-            </button>
+              <span class="right-0 duration-300 transform translate-y-full group-hover:translate-y-0 ease absolute flex items-center justify-end w-10 h-10">
+                <Icon
+                  icon="mdi:rocket-launch"
+                  color="#ffffff"
+                  width="30"
+                  height="24"
+                />
+              </span>
+            </button> */}
           </div>
         </header>
       </div>

@@ -24,7 +24,7 @@ function App() {
       <TechStack />
       <MyWorks />
       <Contactcard />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
